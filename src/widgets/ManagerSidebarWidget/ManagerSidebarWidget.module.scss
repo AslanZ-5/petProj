@@ -1,0 +1,31 @@
+@import url(../../assets/fonts/Inter.css);
+
+.sidebar {
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 100vh;
+  border: 1px solid black;
+  border-top: none;
+
+  & .lItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12.5px 0 12.5px 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    background-color: #1d39c4;
+    border-bottom: 1px solid black;
+    & a {
+      color: #fff;
+    }
+  }
+  & .active {
+    border-bottom: 2px solid black;
+    background-color: #69ade7;
+  }
+  :hover {
+    background-color: #187ed7;
+  }
+}

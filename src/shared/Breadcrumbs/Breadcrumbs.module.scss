@@ -1,0 +1,27 @@
+.crumbs {
+  display: flex;
+  align-items: center;
+  background-color: #5496d433;
+  height: 50px;
+}
+.crumb {
+  margin-right: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+}
+.crumb:last-child {
+  font-weight: 600;
+}
+.crumb::before {
+  content: url(../../assets/breadcrumbs/angle.svg);
+  margin: 0 10px 0 10px;
+  color: #3a4045;
+  font-weight: 900;
+}
+.homeLink {
+  margin-left: 10px;
+  padding-bottom: 5px;
+  text-align: center;
+}

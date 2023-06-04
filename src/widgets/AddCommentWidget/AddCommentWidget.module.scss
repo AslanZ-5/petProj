@@ -1,0 +1,75 @@
+@import url(../../assets/fonts/Inter.css);
+
+.commentWidget_container {
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   display: flex;
+   max-width: 1192px;
+
+   & img {
+      width: 103px;
+      height: 67px;
+      margin-right: 22px;
+   }
+   & .commentsForm {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      max-width: 1068px;
+
+      & .textarea {
+         background: rgba(0, 0, 0, 0);
+         border: 1px solid rgba(45, 57, 76, 0.1);
+         padding: 21px 23px;
+         resize: none;
+         overflow : hidden;
+      }
+      & .submitContainer {
+         display: flex;
+         flex-direction: column;
+         height: 96px;
+         background: #F5F6F7;
+         border: 1px solid rgba(45, 57, 76, 0.1);
+
+         & .img_submitContainer {
+            display: flex;
+            
+
+            & .avatarUser_submitContainer {
+               margin: 18px 9px 8px auto;
+               width: 35px;
+               height: 23px;
+            }
+            & .submitOpenInfo {
+               margin: 27px 42px auto 0;
+               background-image: url(../../assets/img/Polygon.svg);
+               background-repeat: no-repeat;
+               background-color: #F5F6F7;
+               border: none;
+               width: 12px;
+               height: 6px;
+               cursor: pointer;
+
+               & input {
+                  visibility: hidden;
+               }
+            }          
+         }
+         & .submitSend {
+            margin: 0 22px 14px auto;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            min-width: 114px;
+            min-height: 34px;
+            color: #FFFFFF;
+            background: #1676F3;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+         }
+
+      }
+   }
+}

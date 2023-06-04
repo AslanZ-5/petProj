@@ -1,0 +1,67 @@
+.emailContainer {
+   display: flex;
+   flex-direction: column;
+}
+.passwordContainer {
+   display: flex;
+   flex-direction: column;
+
+   & .btn_toggleVisibility {            
+      position: relative;
+      height: 25px;
+      width: 25px;
+      bottom: 15px;
+      left: 90%;
+      background-color: transparent;
+      border: 0;
+   }
+   & img {
+      max-width: 25px;
+      max-height: 25px;
+      margin-left: -8px;
+   }
+   & input {
+      margin-bottom: -25px;
+   }
+}
+.label {
+   margin-top: 16px;
+   margin-bottom: 5px;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 15px;
+   display: flex;
+   align-items: center;
+   color: rgba(27, 43, 65, 0.72);
+} 
+.errorMessage {
+   color: red;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 15px;
+   display: flex;
+   align-items: center;
+}
+.errorInput {
+   border: 2px solid red;
+   padding: 18px 15px;
+   border-radius: 3px;
+
+   &:focus {
+      outline: none;
+      border: 2px solid #1676F3;
+  }
+}
+.input {
+   border: 1px solid rgba(28, 55, 90, 0.16);
+   border-radius: 3px;
+   padding: 18px 15px;
+
+   &:focus {
+      outline: none;
+      border: 2px solid #1676F3;
+  }
+  & :checked {
+   border: 2px solid #1676F3;
+  }
+}

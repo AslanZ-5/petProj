@@ -1,0 +1,247 @@
+@import url(../../assets/fonts/Inter.css);
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   max-width: 1440px;
+   margin: 0 auto;
+   height: 60px;
+   background: #FEFEFE;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+   & .link_mobile {
+      display: none;
+   }
+   & .listLink {
+      display: flex;
+      padding: 0;
+
+      & .link {
+         white-space: nowrap;
+         list-style-type: none;
+         margin: auto 10px;
+
+         & .navlink {
+            text-decoration: none;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #3A4045;
+        }
+       
+        & .active {
+         padding-bottom: 2px;
+         border-bottom: 2px solid #2E75B7;
+      }
+      }
+   }
+   & .accountInfo {
+      display: flex;
+      margin: auto;
+      
+      & .link_signIn {
+         display: flex;
+         white-space: nowrap;
+         text-decoration: none;
+         margin-right: 20px;
+         padding: 6px 24px;
+         background: #1676F3;
+         border: 1px solid #1676F3;
+         box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.25);
+         border-radius: 3px;
+         font-family: 'Inter';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 15px;
+         color: #FEFEFE;
+      }
+      & .link_register {
+         display: flex;
+         text-decoration: none;
+         padding: 6px 20px;
+         border: 1px solid #3A4045;
+         border-radius: 3px;
+         font-family: 'Inter';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 15px;
+         color: #3A4045;
+      }
+      & .link_notifications {
+         margin-top: 7px;
+         width: 12px;
+         height: 16px;
+         background-image: url(../../assets/img/Header-notifications.svg);
+         background-repeat: no-repeat;
+      }
+      & .link_notifications:after {
+         content: '';
+         width: 20px;
+         border: 1px solid #D9D9D9;
+         margin-left: 34px;
+      }
+      & .accountInfo_userDate {
+         display: flex;
+         margin-left: 42px;
+         flex-direction: column;
+
+         & .accountInfo_userName {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            align-items: center;
+            color: #3A4045;
+         }
+         & .accountInfo_userRole {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            align-items: center;
+            color: rgba(0, 0, 0, 0.35);
+         }
+      }
+      & .link_userMore {
+         width: 15px;
+         height: 7px;
+         margin: auto 10px;
+         background-image: url(../../assets/img/header-link-user_more_Vector.svg);
+         background-repeat: no-repeat;
+      }
+      & .imgUser {
+         width: 30px;
+         height: 30px;
+         border-radius: 50%;
+         overflow: hidden;
+      }
+   }
+}
+
+@media (max-width: 800.98px) { 
+   .header {
+      display: flex;
+      justify-content: space-between;
+      height: 50px;
+      background: #5496D4;
+      
+      & .menu_mobile {
+         background-image: url(../../assets/img/Header-Vector.svg);
+         background-repeat: no-repeat;
+         margin: auto 21px;
+         width: 15px;
+         height: 15px;
+      }
+      & .accountInfo {
+         margin-right: 20px;
+
+         & .linkNotifications {
+            background-image: url(../../assets/img/Header-notifications_mobile-size.svg);
+         }       
+         & .linkNotifications:after {
+            content: '';
+            width: 20px;
+            border: 1px solid #2E75B7;
+            margin-left: 24px;
+         }
+         & .accountInfo_userDate {
+            margin-left: 22px;
+   
+            & .accountInfo_userName {
+               color: #FEFEFE;
+            }
+            & .accountInfo_userRole {
+               color:  rgba(255, 255, 255, 0.35);;
+            }
+         }
+         & .link_userMore {
+            background-image: url(../../assets/img/header-link-user-mobile_more_Vector.svg);
+  
+         }
+         & .imgUser {
+            background: #D9D9D9;
+            border: 1px solid #2E75B7;
+
+         }
+         & .link_mobile {
+            display: inline;
+            color: #FEFEFE;
+            width: max-content;
+            text-decoration: none;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+            background: #2E75B7;
+            border: 1px solid #5496D4;
+            border-radius: 3px;
+            padding: 8px 9px 10px 43px;
+            background-image: url(../../assets/img/Header-linck_Get_Started-Vector.svg);
+            background-repeat: no-repeat;
+            background-position: 10px 7px;
+         }  
+         & .link_signIn {
+            display: none;
+         } 
+         & .link_register {
+            display: none;
+         }
+      }
+      & .listLink {
+         display: none;
+      }
+   } 
+}
+
+@media (min-width: 800.98px) and (max-width: 1119.98px) { 
+   .header {
+   
+      & .listLink {
+         display: flex;
+         padding: 0;
+   
+         & .link {
+            margin: auto 5px;          
+           & .active {
+            padding-bottom: 2px;
+            border-bottom: 2px solid #2E75B7;
+         }
+         }
+      }
+      & .accountInfo {
+         & .link_signIn {          
+            margin: 0;
+            margin-right: 10px;
+            padding: 6px 10px;
+         }
+         & .link_register {
+            padding: 6px 10px;
+         }
+      }
+   }
+ }
+ @media (min-width: 920px) { 
+   .imgHeader {
+      width: 100px;
+      height: 50px;
+      margin: auto;
+      background-image: url('../../assets/img/Rectangle\ 114.svg');
+      background-repeat: no-repeat;
+      background-position-y: -1px;     
+   }
+
+   .listLink::before {
+      content: '';
+      margin: auto 10px;
+      width: 0px;
+      height: 20px;
+      border: 1px solid #D9D9D9;
+   }
+ }

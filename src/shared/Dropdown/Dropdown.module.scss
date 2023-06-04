@@ -1,0 +1,49 @@
+
+.dropdown {
+	text-align: center;
+	width: 226px;
+	height: auto;
+	border-radius: 5%;
+	margin-left: 100px;
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+}
+.dropdown_contener {
+	width: 226px;
+	height: 44px;
+	border: 1px solid rgba(31, 32, 65, 0.5);
+	border-radius: 3px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	span {
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		padding-left: 10px;
+	}
+	&::after {
+		content: url(../../assets/img/expand_more.svg);
+		display: flex;
+		margin-left: auto;
+		align-items: center;
+		padding-right: 10px;
+	}
+}
+.dropdown_item {
+	width: 226px;
+	height: 39px;
+	border: 1px solid rgba(31, 32, 65, 0.5);
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.inactiv {
+	width: 226px;
+}
+.activ {
+	opacity: 0;
+}

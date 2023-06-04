@@ -1,0 +1,263 @@
+@import url(../../assets/fonts/Inter.css);
+
+.sideBar_close {
+   font-family: 'Inter';
+   font-style: normal;
+   max-width: 70px;
+   height: calc(100vh - 140px);
+   background: #FEFEFE;
+   box-shadow: 0px 0px 20px rgba(18, 38, 63, 0.05);
+   overflow-y: scroll;
+   
+   & .header_sideBar {
+      display: flex;
+      height: 40px;
+      width: 70px;
+      background: #1676F3;
+      border-bottom: 1px solid #1676F3;
+
+      & .link_sideBar {
+         width: 18px;
+         height: 18px;
+         margin: auto;
+         background-image: url('../../assets/img/PetSideBar/openPetSideBar.svg');
+      }
+      & .title {
+         display: none;
+      }
+      & .link_addPet {
+         display: none;
+      }
+   }
+   & .noPet {
+      display: none;
+   }  
+   & .petCard {
+      display: flex;
+      flex-direction: column;
+         
+      & .imgPetAndDetailedInfo_petCard {
+         display: flex;
+         margin: 10px 10px 0 10px;
+         background: #FEFEFE;
+         border-radius: 3px;
+      
+         & .detailedInfo {
+            display: none;
+         }
+
+      }
+      & .editPetLink {
+         display: none;
+      }
+   }
+   & .petCardOpenInfo {
+      display: flex;
+      flex-direction: column;
+         
+      & .imgPetAndDetailedInfo_petCard {
+         display: flex;
+         margin: 10px 10px 0 10px;
+         background: #FEFEFE;
+         border-radius: 3px;
+         
+         & .detailedInfo {
+            display: none;
+         }
+
+      }
+      & .editPetLink {
+         display: none;
+      }
+   } 
+}
+
+.sideBar_open {
+   font-family: 'Inter';
+   font-style: normal;
+   max-width: 300px;
+   height: calc(100vh - 140px);
+   background: #FEFEFE;
+   box-shadow: 0px 0px 20px rgba(18, 38, 63, 0.05);
+   overflow-y: scroll;
+   padding-bottom: 20px;
+
+   & .header_sideBar {
+      display: flex;
+      height: 40px;
+      background: #1676F3;
+      border-bottom: 1px solid #1676F3;
+
+      & .link_sideBar {
+         width: 18px;
+         height: 18px;
+         border-radius: 50%;
+         margin: auto 23px;
+         background-image: url('../../assets/img/PetSideBar/closeSideBar.svg');
+      }
+      & .title {
+         font-weight: 600;
+         font-size: 12px;
+         line-height: 15px;
+         color: #FEFEFE;
+         margin-top: 15px;
+         margin-left: 60px;
+      }
+      & .link_addPet {
+         background: #FEFEFE;
+         width: 18px;
+         height: 18px;
+         border-radius: 50%;
+         margin: 11px 13px;
+         margin-left: auto;
+         background-image: url('../../assets/img/PetSideBar/plus.svg');
+   
+      }
+   }
+   & .noPet {
+      display: flex;
+      flex-direction: column;
+
+      & img {
+         margin: 20px auto;
+         width: 250px;
+      }
+      & span {
+         margin: 10px auto;
+         color: yellowgreen;
+      }
+   } 
+   & .petCard {
+      display: flex;
+      flex-direction: column;
+         
+      & .imgPetAndDetailedInfo_petCard {
+         display: flex;
+         margin: 10px 10px 0 10px;
+         background: #FEFEFE;
+         border-radius: 3px;
+      
+         & .detailedInfo {
+            display: flex;
+            margin: auto 0;
+            justify-content: space-between;
+            width: 230px;
+            padding: 0;
+            height: 45px;
+            border: none;
+            border-bottom: 1px solid #F5F5F5; 
+            background-color: rgba(0, 0, 0, 0);
+
+            & span {
+               margin: auto;
+               font-weight: 400;
+               font-size: 12px;
+               line-height: 15px;
+               color: #3A4045;
+            }
+            & img {
+               margin: auto 20px;
+               width: 10px;
+               height: 10px;
+            }
+         }
+
+      }
+      & .editPetLink {
+         display: none;
+      }
+   }
+   & .petCardOpenInfo {
+      display: flex;
+      flex-direction: column;
+         
+      & .imgPetAndDetailedInfo_petCard {
+         display: flex;
+         margin: 10px 10px 0 10px;
+         background: rgba(84, 150, 212, 0.2);
+         border-radius: 3px;
+         
+         & .detailedInfo {
+            display: flex;
+            margin: auto 0;
+            justify-content: space-between;
+            width: 230px;
+            padding: 0;
+            height: 45px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0);
+
+            & span {
+               margin: auto;
+               font-weight: 400;
+               font-size: 12px;
+               line-height: 15px;
+               color: #3A4045;
+            }
+            & img {
+               margin: auto 20px;
+               width: 10px;
+               height: 10px;
+            }
+         }
+
+      }
+      & .editPetLink {
+         display: flex;
+         justify-content: space-between;
+         margin: 5px 10px 0 10px;
+
+         & a {
+            display: flex;
+            margin: 0 10px;        
+            justify-content: space-between;
+            width: 125px;
+            height: 30px;
+            text-decoration: none;
+         }
+         & span {
+            margin: auto;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 13px;
+            color: #FEFEFE;
+         }
+         & img {
+            width: 15px;
+            margin: auto 8px;
+         }
+         & .editPetInfo {
+            background: #5496D4;
+            box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 3px;
+         }
+         & .deletePet {
+            background: #E8454D;
+            box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 3px;
+         }
+
+      }
+   } 
+}
+
+.imgPet {
+   margin: 8px 10px;
+   min-width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background: #D9D9D9;
+   border: 2px solid #FEFEFE;
+}
+.imgPetBorder {          
+   margin: 8px 10px;
+   min-width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background: #D9D9D9;
+   border: 2px solid #2E75B7;
+}
+
+::-webkit-scrollbar {
+   display: none;
+}

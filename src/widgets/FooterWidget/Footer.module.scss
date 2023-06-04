@@ -1,0 +1,18 @@
+.footer {
+   background-color: #656A6E;
+   height: 80px;
+   display: flex;
+   justify-content: center;
+
+   & .footerInfo {
+      font-family: 'Open Sans', 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 27px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #FFFFFF;
+   }
+}

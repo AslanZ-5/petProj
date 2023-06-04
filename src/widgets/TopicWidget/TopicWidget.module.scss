@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+.article {
+  padding: 9.75px 20px 9.1px;
+  height: max-content;
+  max-width: 1060px;
+
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns:
+                        minmax(auto, 535px)
+                        minmax(auto, 140px)
+                        minmax(auto, 154px)
+                        minmax(auto, 70px);
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+
+  background: #FEFEFE;
+  box-shadow: inset 0px 5px 20px rgba(18, 38, 63, 0.05);
+  border-radius: 3px;
+
+  overflow: hidden;
+
+  &__link {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5496D4;
+    text-decoration: none;
+  }
+
+  &__content {
+    font-family: 'Inter';
+  }
+
+  &__userInfoContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+
+  }
+
+  &__userAvatar {
+    max-width: 30px;
+    height: 30px;
+    background: #D9D9D9;
+    border-radius: 50% ;
+  }
+
+  &__userName {
+    font-family: 'Inter';
+  }
+
+  &__dateContainer {
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  &__commentsContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+  }
+}
+
+.date {
+  display: flex;
+  column-gap: 10px;
+
+  &__info {
+    font-family: 'Inter'
+  }
+
+  &__hidden {
+    position: relative;
+    background-color: #FEFEFE;
+    transform: translateY(50%);
+    transition: all  0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  &__visible {
+    position: relative;
+    background-color: #FEFEFE;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+.divider {
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    left: -20px;
+    background: url("../../assets/TopicWidget/icons/divider.svg") no-repeat;
+  }
+}
+
+@media (max-width: 699.98px) {
+  .article {
+    grid-template-columns: repeat(2, minmax(67.4px, auto));
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+}

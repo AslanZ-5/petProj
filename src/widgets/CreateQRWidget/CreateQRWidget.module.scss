@@ -1,0 +1,43 @@
+@import url('../../assets/fonts/Inter.css');
+
+.createQR_container {
+   font-family: 'Inter';
+   font-style: normal;
+   width: 380px;
+   padding: 20px;
+
+   & .createQR_header{
+      display: flex;
+      justify-content: space-between;
+
+      & h3 {        
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28px;
+        color: #000000;
+      }
+      & .closeCreateQR_container {
+         width: 25px;
+         height: 25px;
+         border: none;
+         background-color: #ffffff;
+         background-image: url(../../assets/img/closed_black.svg);
+      }
+   }
+   & .formCreateQR {
+      display: flex;
+      flex-direction: column;
+
+   & .create_submit {
+      margin: 20px auto;
+      color: #ffffff;
+      padding: 5px 15px;
+      border-radius: 3px;
+      border: 1px solid#1676F3;
+      background-color: #1676F3;
+
+   }
+   }
+}
